@@ -1,0 +1,25 @@
+# Binaries
+raid-sim
+raid-sim.exe
+*.o
+*.a
+
+# Test/Temp files
+raid_benchmark/
+*.dat
+benchmark_full.txt
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Go build cache
+/bin/
+dist/
