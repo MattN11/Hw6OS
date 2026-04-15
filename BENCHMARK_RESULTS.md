@@ -90,21 +90,21 @@ Note: In production with larger datasets and random access, RAID 0 and RAID 1 wo
 - Highest write throughput (6.83 MB/s) with no redundancy overhead
 - Confirms theoretical expectation
 
-✅ **RAID 1 Write Penalty**
+**RAID 1 Write Penalty**
 - Write throughput at 47.6% of RAID 0, matching the textbook prediction of ~50%
 - Demonstrates cost of mirroring (2 simultaneous writes)
 
-✅ **RAID 4 Parity Bottleneck**
+**RAID 4 Parity Bottleneck**
 - Write performance (3.34 MB/s) shows clear parity disk bottleneck
 - Every write operation requires: data write + XOR calculation + parity write all going to disk 4
 - Slightly worse than RAID 1 (3.25 MB/s) despite similar structure due to XOR overhead
 
-✅ **RAID 5 Distributed Parity Advantage**
+**RAID 5 Distributed Parity Advantage**
 - RAID 5 write performance (3.51 MB/s) exceeds RAID 4 (3.34 MB/s)
 - 104.9% of RAID 4 performance confirms textbook prediction
 - Distributed parity eliminates single disk bottleneck
 
-✅ **Storage Efficiency**
+**Storage Efficiency**
 - RAID 0: 100% capacity (no redundancy)
 - RAID 1: 40% capacity (2-way mirroring overhead)
 - RAID 4/5: 80% capacity (1 disk loss tolerance)
@@ -201,5 +201,5 @@ Note: In production with larger datasets and random access, RAID 0 and RAID 1 wo
 
 ---
 
-**Status**: ✅ All RAID levels implemented, tested, and verified against textbook predictions  
+**Status**: All RAID levels implemented, tested, and verified against textbook predictions  
 **Last Updated**: 2026-04-15
