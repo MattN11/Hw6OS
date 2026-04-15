@@ -1,6 +1,6 @@
 # RAID Simulation in Go
 
-A complete implementation of RAID levels 0, 1, 4, and 5 in Go, with comprehensive benchmarking tools to analyze performance across different RAID configurations.
+A complete implementation of RAID levels 0, 1, 4, and 5 in Go, with benchmarking tools to see performance across different RAID configurations.
 
 ## Project Structure
 
@@ -96,17 +96,6 @@ The benchmark tool generates:
    - Effective storage capacity
 4. **Performance analysis** with comparison to textbook expectations
 
-## Expected Results and Textbook Comparison
-
-### Performance Predictions
-
-| RAID Level | Write Throughput | Read Throughput | Capacity | Redundancy |
-|-----------|-----------------|-----------------|----------|-----------|
-| RAID 0    | ~100%           | ~100%           | 100%     | None      |
-| RAID 1    | ~50%            | ~100%           | 50%      | Full      |
-| RAID 4    | ~40-60%         | ~80-100%        | 80%      | 1-disk    |
-| RAID 5    | ~60-80%         | ~80-100%        | 80%      | 1-disk    |
-
 ### Key Insights
 
 1. **RAID 0** dominates in throughput but offers no fault tolerance
@@ -172,8 +161,4 @@ Handles low-level disk operations:
 - XOR parity calculation for RAID 4/5
 - Go standard library: os package for file I/O, time for benchmarking
 
----
 
-**Author**: OS Lab Assignment  
-**Date**: 2026  
-**Language**: Go 1.21+
