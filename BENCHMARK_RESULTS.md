@@ -86,7 +86,7 @@ Note: In production with larger datasets and random access, RAID 0 and RAID 1 wo
 
 ### How Results Match Textbook Predictions
 
-✅ **RAID 0 Performance Dominance**
+**RAID 0 Performance Dominance**
 - Highest write throughput (6.83 MB/s) with no redundancy overhead
 - Confirms theoretical expectation
 
